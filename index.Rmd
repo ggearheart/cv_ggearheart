@@ -1,6 +1,6 @@
 ---
-title: "Nick Strayer's CV"
-author: Nick Strayer
+title: "Rich Pauloo's CV"
+author: Rich Pauloo
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -8,6 +8,13 @@ output:
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
 ---
+
+<!-- import Monserrat and PT Serif Google fonts -->
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+</style>
+
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(
@@ -48,14 +55,14 @@ Aside
 ================================================================================
 
 
-![logo](beta_dist.png){width=100%}
+![Rich Pauloo](headshot.png){width=80%}
 
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
-  cat("View this CV online with links at _nickstrayer.me/cv_")
+  cat("View this CV online with links at [_richpauloo.com/cv_](http://richpauloo.com/cv)")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/nstrayer/cv/raw/master/strayer_cv.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/richpauloo/cv/raw/master/pauloo_cv.pdf)")
 }
 ```
 
@@ -63,11 +70,11 @@ Contact {#contact}
 --------------------------------------------------------------------------------
 
 
-- <i class="fa fa-envelope"></i> nick.strayer@gmail.com
-- <i class="fa fa-twitter"></i> NicholasStrayer
-- <i class="fa fa-github"></i> github.com/nstrayer
-- <i class="fa fa-link"></i> [nickstrayer.me](http://nickstrayer.me/)
-- <i class="fa fa-phone"></i> (734) 645-0110
+- <i class="fa fa-envelope"></i> richpauloo@gmail.com
+- <i class="fa fa-twitter"></i> [RichPauloo](https://twitter.com/RichPauloo)
+- <i class="fa fa-github"></i> [github.com/richpauloo](https://github.com/richpauloo/)
+- <i class="fa fa-link"></i> [richpauloo.com](http://richpauloo.com/)
+- <i class="fa fa-phone"></i> (415) 275-4981
 
 
 
@@ -78,27 +85,29 @@ Language Skills {#skills}
 skills <- tribble(
   ~skill,               ~level,
   "R",                  5,
-  "Javascript (d3.js)", 4.5,
-  "Python",             4,
-  "Bash",               3.5,
-  "SQL",                3,
-  "C++",                3,
-  "AWK",                3
+  "SQL",                4,
+  "Python",             3,
+  "Bash",               2.5
 )
 
 build_skill_bars(skills)
 ```
 
 
+Foreign Language Skills {#foreign-language}
+--------------------------------------------------------------------------------
 
+Conversational Spanish
 
+<br>
+<br>
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
+Made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
 
-The source code is available at [github.com/nstrayer/cv](https://github.com/nstrayer/cv).
+The source code is available at [github.com/richpauloo/cv](https://github.com/richpauloo/cv).
 
 Last updated on `r Sys.Date()`.
 
@@ -108,14 +117,16 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Nick Strayer {#title}
+Rich Pauloo {#title}
 --------------------------------------------------------------------------------
-
+  
 
 ```{r}
-intro_text <- "I have made [visualizations viewed by hundreds of thousands of people](https://www.nytimes.com/interactive/2016/08/26/us/college-student-migration.html), [sped up query times for 25 terabytes of data by an average of 4,800 times](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/), and built [packages for R](https://github.com/nstrayer/shinysense) that let you [do magic](http://nickstrayer.me/dataDayTexas/).
+intro_text <- "I have coded workflows that stream real-time data from [remote sensor networks](https://github.com/richpauloo/cosumnes_shiny), built dashboards to bring clarity to [massive datasets](https://caccr.github.io/), developed physical simulation models of [groundwater flow and contaminant transport models](https://richpauloo.github.io/research/), made visualizations to improve machine learning [interpretability](https://twitter.com/RichPauloo/status/1124470765095538688), and built [R packages](https://github.com/richpauloo/textme).  
 
-Currently searching for a data science position that allows me to build tools using visualization and machine learning to help people explore and understand their data. 
+Completing a highly quantitative, computational PhD has taught me to how to stay organized, rapidly learn new material, use skepticism to identify opportunities for improvement, ask creative questions, effectively collaborate, and communicate to diverse audiences.  
+
+**I am currently searching for positions where I can work on technical, challenging, data-intensive problems for the betterment of society.**  
 "
 
 cat(sanitize_links(intro_text))
@@ -131,6 +142,8 @@ print_section(position_data, 'education')
 ```
 
 
+<br>
+<br>
 
 Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
@@ -139,74 +152,63 @@ Research Experience {data-icon=laptop}
 print_section(position_data, 'research_positions')
 ```
 
+<br>
+<br>
 
-
-Industry Experience {data-icon=suitcase}
+Professional & Teaching Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ::: aside
-I have worked in a variety of roles ranging from journalist to software engineer to data scientist. I like collaborative environments where I can learn from my peers. 
+Before beginning my PhD, I spent 3 years teaching diverse audiences in environmental education. I worked in Yosemite, Thailand, and the Marin Headlands, and honed skills in public speaking, interpersonal team development, group facilitation, and critical listening.  
 :::
 
 ```{r}
-print_section(position_data, 'industry_positions')
+print_section(position_data, 'professional_positions')
 ```
 
 <br>
 <br>
-<br>
 
-Teaching Experience {data-icon=chalkboard-teacher}
+
+
+Grants and Awards {data-icon=award}
 --------------------------------------------------------------------------------
 
-::: aside
-I am passionate about education. I believe that no topic is too complex if the teacher is empathetic and willing to think about new methods of approaching task. 
-:::
+```{r}
+print_section(position_data, 'awards')
+```
+
+
+<br>
+<br>
+
+Selected Publications, Posters, and Talks {data-icon=book}
+--------------------------------------------------------------------------------
+
 
 ```{r}
-print_section(position_data, 'teaching_positions')
+print_section(position_data, 'academic_articles')
 ```
+
+
+<br>
+<br>
 
 
 Selected Data Science Writing {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
-
 ::: aside
-I regularly blog about data science and visualization on my blog [LiveFreeOrDichotomize.](https://livefreeordichotomize.com/)
+I regularly write about data science, visualization, machine learning, and hydrology on [my blog](richpauloo.com).
 :::
+
 
 ```{r}
 print_section(position_data, 'data_science_writings')
 ```
 
-
-
-Selected Press (About)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'about_me_press')
-```
-
-
-
-Selected Press (By)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'by_me_press')
-```
-
-
-
-
-Selected Publications, Posters, and Talks {data-icon=book}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'academic_articles')
-```
+<br>
+<br>
 
 
 

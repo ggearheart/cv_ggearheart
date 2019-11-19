@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap");
+/*@import url("https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap");
+
+/*<link rel="stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap'>
 
 /* Main text is monserrat*/
 body {
@@ -12,7 +14,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "PT Serif", serif;
   color: #000;
 }
 
