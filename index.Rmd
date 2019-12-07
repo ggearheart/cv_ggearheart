@@ -122,7 +122,7 @@ Rich Pauloo {#title}
   
 
 ```{r}
-intro_text <- "I have coded workflows that stream real-time data from [remote sensor networks](https://github.com/richpauloo/cosumnes_shiny), built dashboards to bring clarity to [massive datasets](https://caccr.github.io/), developed physical simulation models of [groundwater flow and contaminant transport models](https://richpauloo.github.io/research/), made visualizations to improve machine learning [interpretability](https://twitter.com/RichPauloo/status/1124470765095538688), and built [R packages](https://github.com/richpauloo/textme).  
+intro_text <- "I have coded workflows that stream real-time data from [remote sensor networks](https://github.com/richpauloo/cosumnes_shiny), built dashboards to bring clarity to [massive datasets](https://caccr.github.io/), developed physical simulation models of [groundwater flow and contaminant transport](https://richpauloo.github.io/research/), made visualizations to improve machine learning [interpretability](https://twitter.com/RichPauloo/status/1124470765095538688), and built [R packages](https://github.com/richpauloo/textme).  
 
 Completing a highly quantitative, computational PhD has taught me to how to stay organized, rapidly learn new material, use skepticism to identify opportunities for improvement, ask creative questions, effectively collaborate, and communicate to diverse audiences.  
 
