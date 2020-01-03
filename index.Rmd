@@ -26,7 +26,7 @@ library(glue)
 library(tidyverse)
 
 # Set this to true to have links turned into footnotes at the end of the document
-PDF_EXPORT <- FALSE
+PDF_EXPORT <- TRUE
 
 # Holds all the links that were inserted for placement at the end
 links <- c()
@@ -60,7 +60,7 @@ Aside
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
-  cat("View this CV online with links at [_richpauloo.com/cv_](http://richpauloo.com/cv)")
+  cat("View this CV online with links at [_richpauloo.com/cv_](https://www.richpauloo.com/cv)")
 } else {
   cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/richpauloo/cv/raw/master/pauloo_cv.pdf)")
 }
@@ -73,7 +73,7 @@ Contact {#contact}
 - <i class="fa fa-envelope"></i> richpauloo@gmail.com
 - <i class="fa fa-twitter"></i> [RichPauloo](https://twitter.com/RichPauloo)
 - <i class="fa fa-github"></i> [github.com/richpauloo](https://github.com/richpauloo/)
-- <i class="fa fa-link"></i> [richpauloo.com](http://richpauloo.com/)
+- <i class="fa fa-link"></i> [richpauloo.com](https://www.richpauloo.com/)
 - <i class="fa fa-phone"></i> (415) 275-4981
 
 
@@ -122,7 +122,7 @@ Rich Pauloo {#title}
   
 
 ```{r}
-intro_text <- "I have coded workflows that stream real-time data from [remote sensor networks](https://github.com/richpauloo/cosumnes_shiny), built dashboards to bring clarity to [massive datasets](https://caccr.github.io/), developed physical simulation models of [groundwater flow and contaminant transport](https://richpauloo.github.io/research/), made visualizations to improve machine learning [interpretability](https://twitter.com/RichPauloo/status/1124470765095538688), and built [R packages](https://github.com/richpauloo/textme).  
+intro_text <- "I have coded workflows that stream real-time data from [remote sensor networks](https://www.richpauloo.com/project/lcsn/), built dashboards to bring clarity to [massive datasets](https://caccr.github.io/), developed physical simulation models of [groundwater flow and contaminant transport](https://www.richpauloo.com/publication/vhgr/), made visualizations to improve machine learning [interpretability](https://twitter.com/RichPauloo/status/1124470765095538688), and built [R packages](https://github.com/richpauloo/textme).  
 
 Completing a highly quantitative, computational PhD has taught me to how to stay organized, rapidly learn new material, use skepticism to identify opportunities for improvement, ask creative questions, effectively collaborate, and communicate to diverse audiences.  
 
@@ -199,7 +199,7 @@ Selected Data Science Writing {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
 ::: aside
-I regularly write about data science, visualization, machine learning, and hydrology on [my blog](richpauloo.com).
+I regularly write about data science, visualization, machine learning, and hydrology on [my blog](https://www.richpauloo.com/#featured-posts).
 :::
 
 

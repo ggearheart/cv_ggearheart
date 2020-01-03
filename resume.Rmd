@@ -25,7 +25,7 @@ library(tidyverse)
 library(glue)
 
 # Set this to true to have links turned into footnotes at the end of the document
-PDF_EXPORT <- FALSE
+PDF_EXPORT <- TRUE
 
 # Holds all the links that were inserted for placement at the end
 links <- c()
@@ -63,7 +63,7 @@ Contact {#contact}
 - <i class="fa fa-envelope"></i> richpauloo@gmail.com
 - <i class="fa fa-twitter"></i> [RichPauloo](https://twitter.com/RichPauloo)
 - <i class="fa fa-github"></i> [github.com/richpauloo](https://github.com/richpauloo/)
-- <i class="fa fa-link"></i> [richpauloo.com](http://richpauloo.com/)
+- <i class="fa fa-link"></i> [richpauloo.com](https://www.richpauloo.com/)
 - <i class="fa fa-phone"></i> (415) 275-4981
 
 
@@ -101,7 +101,7 @@ Conversational Spanish
 More info {#more-info}
 --------------------------------------------------------------------------------
 
-See full CV at [richpauloo.com/cv](http://richpauloo.com/cv) for more complete list of positions and publications.
+See full CV at [richpauloo.com/cv](https://www.richpauloo.com/cv) for more complete list of positions and publications.
 
 
 Disclaimer {#disclaimer}
@@ -123,7 +123,7 @@ Rich Pauloo {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I have coded workflows that stream real-time data from [remote sensor networks](https://github.com/richpauloo/cosumnes_shiny), built dashboards to bring clarity to [massive datasets](https://caccr.github.io/), developed physical simulation models of [groundwater flow and contaminant transport](https://richpauloo.github.io/research/), made visualizations to improve machine learning [interpretability](https://twitter.com/RichPauloo/status/1124470765095538688), and built [R packages](https://github.com/richpauloo/textme).  
+intro_text <- "I have coded workflows that stream real-time data from [remote sensor networks](https://www.richpauloo.com/project/lcsn/), built dashboards to bring clarity to [massive datasets](https://caccr.github.io/), developed physical simulation models of [groundwater flow and contaminant transport](https://www.richpauloo.com/publication/vhgr/), made visualizations to improve machine learning [interpretability](https://twitter.com/RichPauloo/status/1124470765095538688), and built [R packages](https://github.com/richpauloo/textme).  
 
 **I am currently searching for positions where I can work on technical, challenging, data-intensive problems for the betterment of society.**  
 "
