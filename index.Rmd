@@ -78,6 +78,13 @@ Contact {#contact}
 
 
 
+Foreign Language Skills {#foreign-language}
+--------------------------------------------------------------------------------
+
+Conversational Spanish
+
+
+
 Language Skills {#skills}
 --------------------------------------------------------------------------------
 
@@ -94,18 +101,13 @@ build_skill_bars(skills)
 ```
 
 
-Foreign Language Skills {#foreign-language}
---------------------------------------------------------------------------------
-
-Conversational Spanish
-
 <br>
 <br>
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
+Made with [**pagedown**](https://github.com/rstudio/pagedown) in R.
 
 The source code is available at [github.com/richpauloo/cv](https://github.com/richpauloo/cv).
 
@@ -145,7 +147,7 @@ print_section(position_data, 'education')
 <br>
 <br>
 
-Research Experience {data-icon=laptop}
+Research Experience {data-icon=calculator}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -155,15 +157,15 @@ print_section(position_data, 'research_positions')
 <br>
 <br>
 
-Professional & Teaching Experience {data-icon=suitcase}
+Teaching & Leadership Experience {data-icon=tree}
 --------------------------------------------------------------------------------
 
 ::: aside
-Before beginning my PhD, I spent 3 years teaching diverse audiences in environmental education. I worked in Yosemite, Thailand, and the Marin Headlands, and honed skills in public speaking, interpersonal team development, group facilitation, and critical listening.  
+Before pursuing my PhD, I spent 3 years teaching diverse audiences in environmental education. I worked in Yosemite, Thailand and the Marin Headlands, and honed skills in public speaking, interpersonal team development, group facilitation, and critical listening. Living with my coworkers in tight teams taught me patience and cooperation. During summers I guided expeditions in the wilderness and abroad with National Geographic.  
 :::
 
 ```{r}
-print_section(position_data, 'professional_positions')
+print_section(position_data, 'teaching_leadership_positions')
 ```
 
 <br>
@@ -210,6 +212,16 @@ print_section(position_data, 'data_science_writings')
 <br>
 <br>
 
+
+Certifications {data-icon=star}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'certifications')
+```
+
+<br>
+<br>
 
 
 ```{r}
