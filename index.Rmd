@@ -55,7 +55,7 @@ Aside
 ================================================================================
 
 
-![Rich Pauloo](headshot.png){width=80%}
+![Rich Pauloo](headshot.jpg){width=80%}
 
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
