@@ -127,7 +127,7 @@ Rich Pauloo {#title}
 ```{r}
 intro_text <- "I'm a hydrogeologist and data scientist developing scientific methods to monitor, model, and manage regional-scale aquifers, with applications in sustainable groundwater management, agricultural water use, and real-time natural resource monitoring.
 
-My background is in hydrogeology (numerical models, statistical methods, optimization, mapping), computing (cloud computing, sensor networks, open source software development), and physics (mathematical and numerical modeling, contaminant transport).  
+My background is in physical science (earth science, statistical methods, optimization, mapping), computing (sensor networks, the cloud, open source software development), and physics (mathematical and numerical modeling, contaminant transport).  
 
 I have coded workflows that stream real-time data from [remote sensor networks](https://www.richpauloo.com/project/lcsn/), built dashboards to bring clarity to [massive datasets](http://calwaterquality.com/), developed physical simulation models of [groundwater flow and contaminant transport](https://www.richpauloo.com/publication/vhgr/), made visualizations to improve machine learning [interpretability](https://twitter.com/RichPauloo/status/1124470765095538688), and built [R packages](https://github.com/richpauloo/textme).  
 "
