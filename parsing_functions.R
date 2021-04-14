@@ -48,7 +48,7 @@ strip_links_from_cols <- function(data, cols_to_strip){
 # and prints the section to markdown. 
 print_section <- function(position_data, section_id){
   position_data %>% 
-    filter(section == section_id) %>% 
+    filter(section == section_id & in_cv == TRUE) %>% 
     arrange(desc(end)) %>% 
     mutate(id = 1:n()) %>% 
     pivot_longer(

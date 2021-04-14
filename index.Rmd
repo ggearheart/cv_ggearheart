@@ -55,7 +55,7 @@ Aside
 ================================================================================
 
 
-![Rich Pauloo](headshot.jpg){width=80%}
+![Rich Pauloo, PhD](headshot.jpg){width=80%}
 
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
@@ -120,16 +120,14 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Rich Pauloo {#title}
+Rich Pauloo, PhD {#title}
 --------------------------------------------------------------------------------
   
 
 ```{r}
-intro_text <- "I'm a hydrogeologist and data scientist developing scientific methods to monitor, model, and manage regional-scale aquifers, with applications in sustainable groundwater management, agricultural water use, and real-time natural resource monitoring.
+intro_text <- "I'm a hydrogeologist and data scientist with a background in physical science (geology, fluid mechanics, statistical methods, optimization, geospatial science), computing (sensor networks, cloud computing, open source software development), and physics (mathematical and numerical modeling, contaminant transport).  
 
-My background is in physical science (earth science, statistical methods, optimization, mapping), computing (sensor networks, the cloud, open source software development), and physics (mathematical and numerical modeling, contaminant transport).  
-
-I have coded workflows that stream real-time data from [remote sensor networks](https://www.richpauloo.com/project/lcsn/), built dashboards to bring clarity to [massive datasets](http://calwaterquality.com/), developed physical simulation models of [groundwater flow and contaminant transport](https://www.richpauloo.com/publication/vhgr/), made visualizations to improve machine learning [interpretability](https://twitter.com/RichPauloo/status/1124470765095538688), and built [R packages](https://github.com/richpauloo/textme).  
+I have coded workflows that automate real-time data streaming from [hundreds of remote sensor networks](https://www.richpauloo.com/project/lcsn/); built dashboards and interactive data visualizations to bring clarity to [datasets with millions of obervations](http://calwaterquality.com/); created 3D numerical physical simulation models of [groundwater flow and contaminant transport](https://www.richpauloo.com/publication/vhgr/); made animations to improve machine learning [interpretability](https://twitter.com/RichPauloo/status/1124470765095538688); built [multiple R packages](https://github.com/richpauloo/textme); won an AI for Earth Grant to create a [web tool to communicate complex model results](https://www.gspdrywells.com/); and I'm currently writing [R data science cirriculum](https://r4wrds.com/intro/index.html).  
 "
 
 cat(sanitize_links(intro_text))
@@ -201,14 +199,16 @@ print_section(position_data, 'academic_articles')
 Selected Data Science Writing {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
-::: aside
-I regularly write about data science, visualization, machine learning, and hydrology on [my blog](https://www.richpauloo.com/#featured-posts).
-:::
 
 
 ```{r}
 print_section(position_data, 'data_science_writings')
 ```
+
+::: aside
+View all of my [blog posts here](https://www.richpauloo.com/post).
+:::
+
 
 <br>
 <br>
