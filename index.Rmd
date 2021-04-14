@@ -26,7 +26,7 @@ library(glue)
 library(tidyverse)
 
 # Set this to true to have links turned into footnotes at the end of the document
-PDF_EXPORT <- FALSE
+PDF_EXPORT <- TRUE
 
 # Holds all the links that were inserted for placement at the end
 links <- c()
@@ -127,7 +127,7 @@ Rich Pauloo, PhD {#title}
 ```{r}
 intro_text <- "I'm a hydrogeologist and data scientist with a background in physical science (geology, fluid mechanics, statistical methods, optimization, geospatial science), computing (sensor networks, cloud computing, open source software development), and physics (mathematical and numerical modeling, contaminant transport).  
 
-I have coded workflows that automate real-time data streaming from [hundreds of remote sensor networks](https://www.richpauloo.com/project/lcsn/); built dashboards and interactive data visualizations to bring clarity to [datasets with millions of obervations](http://calwaterquality.com/); created 3D numerical physical simulation models of [groundwater flow and contaminant transport](https://www.richpauloo.com/publication/vhgr/); made animations to improve machine learning [interpretability](https://twitter.com/RichPauloo/status/1124470765095538688); built [multiple R packages](https://github.com/richpauloo/textme); won an AI for Earth Grant to create a [web tool to communicate complex model results](https://www.gspdrywells.com/); and I'm currently writing [R data science cirriculum](https://r4wrds.com/intro/index.html).  
+I have coded workflows that automate real-time data streaming from [hundreds of remote sensor networks](https://www.richpauloo.com/project/lcsn/); built dashboards and interactive data visualizations to bring clarity to [datasets with millions of observations](http://calwaterquality.com/); created 3D numerical physical simulation models of [groundwater flow and contaminant transport](https://www.richpauloo.com/publication/vhgr/); made animations to improve machine learning [interpretability](https://twitter.com/RichPauloo/status/1124470765095538688); built [multiple R packages](https://github.com/richpauloo/textme); won an AI for Earth Grant to create a [web tool to communicate complex model results](https://www.gspdrywells.com/); and I'm currently writing [R data science curriculum](https://r4wrds.com/intro/index.html).  
 "
 
 cat(sanitize_links(intro_text))
