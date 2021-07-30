@@ -26,7 +26,7 @@ library(glue)
 library(tidyverse)
 
 # Set this to true to have links turned into footnotes at the end of the document
-PDF_EXPORT <- TRUE
+PDF_EXPORT <- FALSE
 
 # Holds all the links that were inserted for placement at the end
 links <- c()
@@ -127,7 +127,7 @@ Rich Pauloo, PhD {#title}
 ```{r}
 intro_text <- "I'm a data scientist with a background in physical science (hydrology, fluid mechanics, geology, statistical methods, optimization, geospatial science), computing (sensor networks, cloud computing, open source software development), and physics (mathematical and numerical modeling, contaminant transport).  
 
-I have coded workflows to automate ETL jobs from from [hundreds of remote sensor networks](https://www.richpauloo.com/project/lcsn/); built dashboards and interactive data visualizations to bring clarity to [datasets with millions of observations](http://calwaterquality.com/); created 3D numerical physical simulation models of [groundwater flow and contaminant transport](https://www.richpauloo.com/publication/vhgr/); made animations to improve machine learning [interpretability](https://twitter.com/RichPauloo/status/1124470765095538688); built [multiple R packages](https://github.com/richpauloo/textme); won an AI for Earth Grant to create a [web tool to communicate complex model results](https://www.gspdrywells.com/); and developed [R data science curriculum](https://r4wrds.com/).  
+I have coded workflows to automate ETL jobs from from [hundreds of remote sensor networks](https://www.richpauloo.com/project/lcsn/); built dashboards and interactive data visualizations to bring clarity to [datasets with millions of observations](http://calwaterquality.com/); created 3D numerical physical simulation models of [groundwater flow and contaminant transport](https://www.richpauloo.com/publication/vhgr/); explored ways to improve machine learning [interpretability](https://twitter.com/RichPauloo/status/1124470765095538688); built [R packages](https://github.com/richpauloo/textme); won an AI for Earth Grant to model the risk of [domestic wells going dry in California's Central Valley](https://www.gspdrywells.com/); and developed [R data science curriculum](https://r4wrds.com/).  
 "
 
 cat(sanitize_links(intro_text))
