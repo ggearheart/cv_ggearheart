@@ -26,7 +26,7 @@ library(glue)
 library(tidyverse)
 
 # Set this to true to have links turned into footnotes at the end of the document
-PDF_EXPORT <- FALSE
+PDF_EXPORT <- TRUE
 
 # Holds all the links that were inserted for placement at the end
 links <- c()
@@ -128,7 +128,7 @@ intro_text <- "I'm a data scientist at LWA and spend most of my time in `R` auto
 
 I have a PhD in Hydrology and my dissertation is titled *'Emerging consequences of regional-scale aquifer depletion: data-driven and numerical models of well failure, basin salinization, and contaminant transport'* [(my exit seminar can be viewed here)](https://www.richpauloo.com/talk/2020-exit-seminar/). Early in my PhD, I found that I really enjoyed data science and programming, and I used these years to sharpen those skills. My published research includes [NLP and network analysis](https://www.richpauloo.com/publication/cig/), [spatial statistics](https://www.richpauloo.com/publication/well-failure/), and [physical modeling of 3D, subsurface contaminant transport](https://www.richpauloo.com/publication/vhgr/).
 
-I'm an #rstats nerd and automation/reproducibility fanatic. My favorite tools include tidyverse (`dplyr`, `ggplot2`, `purrr`), `shiny`, `flexdashboard`, `DT`, `RMarkdown` (for dashbaords/reporting), `sf`, `sp`, `raster`, `leaflet` (for spatial data), and `DBI` for databases. A few projects I'm proud of include an [`R` package to query water quality data 📦](https://caopenwater.github.io/sdwisard/), [R data science curriculum 📚](https://r4wrds.com/), a dashboard that makes [millions of water quality observations understandable 📈](http://calwaterquality.com/), and a model that [predicts the risk of wells going dry 💧](https://www.gspdrywells.com/) funded by Microsoft's AI for Earth Grant.  
+I'm an #rstats nerd and automation/reproducibility fanatic. My favorite tools include tidyverse (`dplyr`, `ggplot2`, `purrr`), `shiny`, `flexdashboard`, `plotly`, `DT`, `RMarkdown` (for dashboards/reporting), `sf`, `sp`, `raster`, `leaflet` (for spatial data), and `DBI` for databases. A few projects I'm proud of include an [`R` package to query water quality data 📦](https://caopenwater.github.io/sdwisard/), [R data science curriculum 📚](https://r4wrds.com/), a dashboard that makes [millions of water quality observations understandable 📈](http://calwaterquality.com/), and a model that [predicts the risk of wells going dry 💧](https://www.gspdrywells.com/) funded by Microsoft's AI for Earth Grant.  
 "
 
 cat(sanitize_links(intro_text))
