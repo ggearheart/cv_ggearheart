@@ -1,0 +1,247 @@
+---
+title: "Rich Pauloo's CV"
+author: Rich Pauloo
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+---
+
+<!-- import Monserrat and PT Serif Google fonts -->
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+</style>
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+
+library(glue)
+library(tidyverse)
+
+# Set this to true to have links turned into footnotes at the end of the document
+PDF_EXPORT <- TRUE
+
+# Holds all the links that were inserted for placement at the end
+links <- c()
+
+source('parsing_functions.R')
+
+# Load csv with position info
+position_data <- read_csv('positions_reduced.csv')
+```
+
+
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("
+  <style>
+  :root{
+    --decorator-outer-offset-left: -6.5px;
+  }
+  </style>")
+}
+```
+
+
+Aside
+================================================================================
+
+
+![Rich Pauloo, PhD](headshot.jpg){width=80%}
+
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("View this CV online with links at [_richpauloo.com/cv_](https://www.richpauloo.com/cv)")
+} else {
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/richpauloo/cv/raw/master/pauloo_cv.pdf)")
+}
+```
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+
+- <i class="fa fa-envelope"></i> richpauloo@gmail.com
+- <i class="fa fa-twitter"></i> [RichPauloo](https://twitter.com/RichPauloo)
+- <i class="fa fa-github"></i> [github.com/richpauloo](https://github.com/richpauloo/)
+- <i class="fa fa-link"></i> [richpauloo.com](https://www.richpauloo.com/)
+- <i class="fa fa-phone"></i> (415) 275-4981
+
+
+
+Foreign Language Skills {#foreign-language}
+--------------------------------------------------------------------------------
+
+Conversational Spanish
+
+
+
+Language Skills {#skills}
+--------------------------------------------------------------------------------
+
+```{r}
+skills <- tribble(
+  ~skill,               ~level,
+  "R",                  5,
+  "SQL",                3,
+  "Python",             3,
+  "Bash",               3
+)
+
+build_skill_bars(skills)
+```
+
+
+<br>
+<br>
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Made with [**pagedown**](https://github.com/rstudio/pagedown) in R.
+
+The source code is available at [github.com/richpauloo/cv](https://github.com/richpauloo/cv).
+
+Last updated on `r Sys.Date()`.
+
+
+
+
+Main
+================================================================================
+
+Rich Pauloo, PhD {#title}
+--------------------------------------------------------------------------------
+  
+
+```{r}
+intro_text <- "I'm a data scientist at LWA and spend most of my time in `R` automating ETL pipelines for sensor networks 📡, building Shiny Apps and dashboards 🖥, designing approaches with spatial statistics and hydrologic models, and generally wrangling lots of data. 
+
+I have a PhD in Hydrology and my dissertation is titled *'Emerging consequences of regional-scale aquifer depletion: data-driven and numerical models of well failure, basin salinization, and contaminant transport'* ([my exit seminar can be viewed here](https://www.richpauloo.com/talk/2020-exit-seminar/) ). Early in my PhD, I found that I really enjoyed data science and programming, and I used these years to sharpen those skills. My published research includes [NLP and network analysis](https://www.richpauloo.com/publication/cig/), [spatial statistics](https://www.richpauloo.com/publication/well-failure/), and [physical modeling of 3D, subsurface contaminant transport](https://www.richpauloo.com/publication/vhgr/).
+
+I'm an #rstats nerd and automation/reproducibility fanatic. My favorite tools include tidyverse (`dplyr`, `ggplot2`, `purrr`), `shiny`, `flexdashboard`, `plotly`, `DT`, `RMarkdown` (for dashboards/reporting), `sf`, `sp`, `raster`, `leaflet` (for spatial data), and `DBI` for databases. A few projects I'm proud of include an [`R` package to query water quality data 📦](https://caopenwater.github.io/sdwisard/), [R data science curriculum 📚](https://r4wrds.com/), a dashboard that makes [millions of water quality observations understandable 📈](http://calwaterquality.com/), and a model that [predicts the risk of wells going dry 💧](https://www.gspdrywells.com/) funded by Microsoft's AI for Earth Grant.  
+"
+
+cat(sanitize_links(intro_text))
+```
+
+
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'education')
+```
+
+
+<br>
+<br>
+
+Professional & Research Experience {data-icon=calculator}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'professional_research_positions')
+```
+
+<!-- <br> -->
+<!-- <br> -->
+
+<!-- Teaching & Leadership Experience {data-icon=tree} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- ::: aside -->
+<!-- Before pursuing my PhD, I spent 3 years teaching diverse audiences in environmental education. I worked in Yosemite, Thailand and the Marin Headlands, and honed skills in public speaking, interpersonal team development, group facilitation, and critical listening. Living with my coworkers in tight teams taught me patience and cooperation. During summers I guided expeditions in the wilderness and abroad with National Geographic.   -->
+<!-- ::: -->
+
+<!-- ```{r} -->
+<!-- print_section(position_data, 'teaching_leadership_positions') -->
+<!-- ``` -->
+
+<!-- <br> -->
+<!-- <br> -->
+
+
+
+<!-- Grants and Awards {data-icon=award} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- ```{r} -->
+<!-- print_section(position_data, 'awards') -->
+<!-- ``` -->
+
+
+<!-- <br> -->
+<!-- <br> -->
+
+<!-- Selected Publications, Posters, and Talks {data-icon=book} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+
+<!-- ```{r} -->
+<!-- print_section(position_data, 'academic_articles') -->
+<!-- ``` -->
+
+
+<br>
+<br>
+
+
+Selected Data Science Writing {data-icon=chart-line}
+--------------------------------------------------------------------------------
+
+
+
+```{r}
+print_section(position_data, 'data_science_writings')
+```
+
+::: aside
+View all of my [blog posts here](https://www.richpauloo.com/post).
+:::
+
+
+<br>
+<br>
+
+
+<!-- Certifications {data-icon=star} -->
+<!-- -------------------------------------------------------------------------------- -->
+
+<!-- ```{r} -->
+<!-- print_section(position_data, 'certifications') -->
+<!-- ``` -->
+
+<!-- <br> -->
+<!-- <br> -->
+
+
+```{r}
+if(PDF_EXPORT){
+  cat("
+  
+Links {data-icon=link}
+--------------------------------------------------------------------------------
+
+<br>
+
+
+")
+  
+  walk2(links, 1:length(links), function(link, index){
+    print(glue('{index}. {link}'))
+  })
+}
+```
+
+
