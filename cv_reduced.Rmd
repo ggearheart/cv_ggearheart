@@ -126,7 +126,7 @@ Rich Pauloo, PhD {#title}
 ```{r}
 intro_text <- "I spend most of my days writing code (mostly `R`, `Python`, `SQL`) to clean, visualize, and model data. I have a PhD in computational hydrogeology, where I simulated and visualized 3D contaminant transport in aquifers. 
 
-I'm an exert-level #rstats user. A few projects I'm proud of include `R` packages to [query water quality data 📦](https://caopenwater.github.io/sdwisard/) and [text yourself from `R` 📱](https://github.com/richpauloo/textme), [`R` data science curriculum 📚](https://r4wrds.com/), a dashboard that makes [millions of water quality observations understandable 📈](http://calwaterquality.com/), and a model that [predicts the risk of wells going dry 💧](https://www.gspdrywells.com/) funded by Microsoft's AI for Earth Grant.  
+I'm an expert-level #rstats user. A few projects I'm proud of include `R` packages to [query water quality data 📦](https://caopenwater.github.io/sdwisard/) and [text yourself from `R` 📱](https://github.com/richpauloo/textme), [`R` data science curriculum 📚](https://r4wrds.com/), a dashboard that makes [millions of water quality observations understandable 📈](http://calwaterquality.com/), and a model that [predicts the risk of wells going dry 💧](https://www.gspdrywells.com/) funded by Microsoft's AI for Earth Grant.  
 "
 
 cat(sanitize_links(intro_text))
