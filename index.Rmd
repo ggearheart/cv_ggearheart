@@ -1,6 +1,6 @@
 ---
-title: "Rich Pauloo's CV"
-author: Rich Pauloo
+title: "Greg Gearheart's CV"
+author: Greg Gearheart
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -70,46 +70,19 @@ Contact {#contact}
 --------------------------------------------------------------------------------
 
 
-- <i class="fa fa-envelope"></i> richpauloo@gmail.com
-- <i class="fa fa-twitter"></i> [RichPauloo](https://twitter.com/RichPauloo)
-- <i class="fa fa-github"></i> [github.com/richpauloo](https://github.com/richpauloo/)
-- <i class="fa fa-link"></i> [richpauloo.com](https://www.richpauloo.com/)
-- <i class="fa fa-phone"></i> (415) 275-4981
+- <i class="fa fa-envelope"></i> olawai@gmail.com
+- <i class="fa fa-twitter"></i> [olawai](https://twitter.com/olawai)
+- <i class="fa fa-github"></i> [github.com/ggearheart](https://github.com/ggearheart/)
+- <i class="fa fa-phone"></i> (916) 802-8549
 
 
-
-Foreign Language Skills {#foreign-language}
---------------------------------------------------------------------------------
-
-Conversational Spanish
-
-
-
-<!-- Language Skills {#skills} -->
-<!-- -------------------------------------------------------------------------------- -->
-
-<!-- ```{r} -->
-<!-- skills <- tribble( -->
-<!--   ~skill,               ~level, -->
-<!--   "R",                  5, -->
-<!--   "SQL",                3, -->
-<!--   "Python",             3, -->
-<!--   "Bash",               3 -->
-<!-- ) -->
-
-<!-- build_skill_bars(skills) -->
-<!-- ``` -->
-
-
-<!-- <br> -->
-<!-- <br> -->
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
 <!-- Made with [**pagedown**](https://github.com/rstudio/pagedown) in R. -->
 
-The source code is available at [github.com/richpauloo/cv](https://github.com/richpauloo/cv).
+The source code is available at [github.com/ggearheart/cv_ggearheart]([https://github.com/richpauloo/cv](https://github.com/ggearheart/cv_ggearheart).
 
 Last updated on `r Sys.Date()`.
 
@@ -119,14 +92,12 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Rich Pauloo, PhD {#title}
+Greg Gearheart, PE {#title}
 --------------------------------------------------------------------------------
   
 
 ```{r}
-intro_text <- "I spend most of my days writing code (mostly `R`, `Python`, `SQL`) to clean, visualize, and model data. I have a PhD in computational hydrogeology, where I simulated and visualized 3D contaminant transport in aquifers. 
-
-I'm an exert-level #rstats user. A few projects I'm proud of include `R` packages to [query water quality data 📦](https://caopenwater.github.io/sdwisard/) and [text yourself from `R` 📱](https://github.com/richpauloo/textme), [`R` data science curriculum 📚](https://r4wrds.com/), a dashboard that makes [millions of water quality observations understandable 📈](http://calwaterquality.com/), and a model that [predicts the risk of wells going dry 💧](https://www.gspdrywells.com/) funded by Microsoft's AI for Earth Grant.  
+intro_text <- "I work for the State of California as a water data liberator. I am the Deputy Director for Information Management and Analysis at the State Water Resources Control Board."
 "
 
 cat(sanitize_links(intro_text))
@@ -195,23 +166,6 @@ print_section(position_data, 'awards')
 <br>
 <br>
 
-
-Selected Data Science Writing {data-icon=chart-line}
---------------------------------------------------------------------------------
-
-
-
-```{r}
-print_section(position_data, 'data_science_writings')
-```
-
-::: aside
-View all of my [blog posts here](https://www.richpauloo.com/post).
-:::
-
-
-<br>
-<br>
 
 
 Certifications {data-icon=star}
