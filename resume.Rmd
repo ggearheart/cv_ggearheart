@@ -1,6 +1,6 @@
 ---
-title: Rich Pauloo's Resume"
-author: Rich Pauloo
+title: Greg Gearheart's Resume"
+author: Greg Gearheart
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -60,11 +60,10 @@ Contact {#contact}
 
 
 
-- <i class="fa fa-envelope"></i> richpauloo@gmail.com
-- <i class="fa fa-twitter"></i> [RichPauloo](https://twitter.com/RichPauloo)
-- <i class="fa fa-github"></i> [github.com/richpauloo](https://github.com/richpauloo/)
-- <i class="fa fa-link"></i> [richpauloo.com](https://www.richpauloo.com/)
-- <i class="fa fa-phone"></i> (415) 275-4981
+- <i class="fa fa-envelope"></i> olawai@gmail.com
+- <i class="fa fa-twitter"></i> [olawai](https://twitter.com/olawai)
+- <i class="fa fa-github"></i> [github.com/ggearheart](https://github.com/ggearheart/)
+- <i class="fa fa-phone"></i> (916) 802-8549
 
 
 <br>
@@ -86,14 +85,6 @@ skills <- tribble(
 
 build_skill_bars(skills)
 ```
-
-<br>
-<br>
-
-Foreign Language Skills {#foreign-language}
---------------------------------------------------------------------------------
-
-Conversational Spanish
 
 <br>
 <br>
